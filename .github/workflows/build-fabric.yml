@@ -19,6 +19,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 21
+          cache: gradle
 
       - name: Grant execute permission for Gradle wrapper
         run: chmod +x ./gradlew
@@ -31,5 +32,6 @@ jobs:
         with:
           name: fabric-dist
           path: |
-            dist/**
-            fabric/build/libs/**
+            dist/*.jar
+            dist/checksums.txt
+            fabric/build/libs/*.jar
