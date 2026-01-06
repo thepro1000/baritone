@@ -6,6 +6,9 @@ on:
       - copilot/build-minecraft-mod-fabric-1-21-10
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
