@@ -34,4 +34,3 @@ jobs:
           path: |
             dist/*.jar
             dist/checksums.txt
-            fabric/build/libs/*.jar
