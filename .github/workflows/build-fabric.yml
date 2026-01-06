@@ -31,6 +31,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: fabric-dist
-          path:
-            - dist/*.jar
-            - dist/checksums.txt
+          path: |
+            dist/*.jar
+            dist/checksums.txt
